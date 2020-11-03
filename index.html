@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href='./main.css' rel="stylesheet" href="">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap / Fontawesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css"
+  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"
+  >
+  <script src="https://kit.fontawesome.com/6b81b22d18.js" crossorigin="anonymous"></script>
+
+  <!-- Event listeners / actions JS -->
+  <script defer src="./Javascript/planet__script.js"></script>
+  <script defer src="./Javascript/whisp__script.js"></script>
+  <script defer src="./Javascript/eden__script.js"></script>
+
+  <script defer src="./Javascript/background__script.js"></script>
+  <script src="./node_modules/animejs/lib/anime.min.js"></script>
+  <script src="./node_modules/typed.js/lib/typed.min.js"></script>
+
+
+  <title>Lucas Legrand</title>
+</head>
+<body>
+  <header>
+    <div class="u-centered">
+      <div class="u-grid">
+        <div class="introduction transition-left">
+          <div class="say-hi">
+            <img class="lucas__picture"src="lucas.png" alt="">
+            <div class="say-hi__text">
+              <h1>Hello</h1>
+              <h1>There</h1>
+            </div>
+            <h1 class="say-hi__emoji">✌🏻</h1>
+          </div>
+          <div class="introduction__text">
+              <!-- <div class="animated__bar"></div> -->
+            <p>I'm a frontend developper turning code into beautiful websites. Love hiking and <span id="eating">(eating)</span> making burgers.</p>
+            <p id="social"><strong>socials</strong></p>
+          </div>
+          <div class="socials">
+            <div class="social__icon__container">
+              <a href="https://github.com/LegrandLucas" target="_blank" class="socials__links"><i class="fab fa-github"></i></a>
+            </div>
+              <div class="social__icon__container">
+                  <a href="https://www.linkedin.com/in/lucaslegrand/" target="_blank" href="#" class="socials__links"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div class="social__icon__container">
+                  <a href="https://twitter.com/lgrdlcs" target="_blank" href="#" class="socials__links"><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+          <div class="animations">
+            <div class="location">
+              <p class="city"><strong>Lille</strong></p>
+              <p class="coordonates" id="latitude"></p>
+              <p class="coordonates" id="longitude"></p>
+              <div class="square__bg__1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="menu__element">
+            <p id="menu__arrow"><i class="fas fa-angle-double-right"></i></p><a href="#" id="projects" class="menu__name"></a>
+          </div>
+          <div class="menu__element">
+            <p id="menu__arrow"><i class="fas fa-angle-double-right"></i></p><a href="#" id="skills" class="menu__name"></a>
+          </div>
+          <div class="menu__element">
+            <p id="menu__arrow"><i class="fas fa-angle-double-right"></i></p><a href="#" id="about" class="menu__name"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="section__transition">
+    <div class="triangle__bar"></div>
+    <div class="square__bar">
+      <div class="square__1 black">
+          <div class="triangle__white__1"></div>
+      </div>
+      <div>
+        <div class="square__2 black">
+          <div class="triangle__white__1"></div>
+        </div>
+      </div>
+      <div class="square__3 black">
+          <div class="triangle__white__1"></div>
+      </div>
+    </div>
+  </div>
+  <!-- <section class="about">
+    <div class="about__title">
+      <h2>
+        <span>
+          WHO AM I
+        </span>
+      </h2>
+    </div>
+    <div class="about__main">
+      <div class="about__left">
+        <div class="main__pictures">
+          <img id="pic__1" src="./Assets/lucas_hd.JPG" alt="" class="about__picture">
+        </div>
+      </div>
+      <div class="about__right">
+        <div class="about__description">
+          <h1>Very honest description</h1>
+          <p>
+            I'm a former marketer graduated from Coventry University. I started my career as a IOT startup specialist and then moved
+            to Paris to pursue my dream: work within the eSport industry.
+
+            After 2 years as the manager of one of the most dominant french esport team, I switch my career path and dived into
+            code.
+
+            I did Le Wagon, a coding bootcamp where I learnt how to code and all the best practices.
+
+            I'm passionate, curious and looking to grow. I'm actively looking for a new opportunity as a Frontend developper.
+          </p>
+          <h2>Qualities</h2>
+          <ul>
+            <li>Passionate</li>
+            <li>Curious</li>
+            <li>Easy to deal with</li>
+          </ul>
+          <h2>Defaults</h2>
+            <ul>
+              <li>Impatient</li>
+              <li>Messy</li>
+              <li>Anxious</li>
+            </ul>
+          <div class="element__cube__line">
+            <div class="element__cube"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- <div class="section__transition transition__to__white">
+    <div class="square__bar">
+        <div class="square__2 red">
+          <div class="triangle__white__1"></div>
+        </div>
+    </div>
+  </div> -->
+  <section>
+    <div class="projects u-centered">
+      <div class="projects__left">
+        <div class="project__description">
+          <div class="project__title">
+            <div class="project__background">
+              <h1>
+                <span id="planet__bg__title">PLANET</span>
+                <span class="title__part__two">INVADERS</span>
+              </h1>
+            </div>
+            <div class="title__foreground">
+              <h2>Planet Invaders</h2>
+            </div>
+          </div>
+          <h3>// Stack</h3>
+          <div>
+            <span class="ruby">Ruby on Rails</span>
+            <span class="javascript">Javascript</span>
+            <span class="html">Html</span>
+            <span class="css">Css</span>
+          </div>
+          <h3>// Project</h3>
+          <p>
+            Planet invaders is a one week team project made at Le Wagon. It's a copycat of Airbnb where you can rent planets
+            based
+            on Star Wars Universe.
+            It was my first team project and we basically used everything we learn't during the bootcamp. We designed first
+            a
+            wireframe on figma and then coded the plateform.
+            The backend is on ruby on rails with a standard mvc model and the database is in MySql, using active record for
+            our
+            requests.
+            For the the frontend, we used traditional html, css & javascript.
+            Overall, it was a very interesting project where I learn't to collaborate with others and how to really use
+            versionning tools such as git and github.
+          </p>
+          <a href="https://planet-invaders.herokuapp.com/" target="_blank">https://planet-invaders.herokuapp.com/</a> (takes few seconds to load)
+        </div>
+      </div>
+      <div class="projects__right">
+        <div class="chrome">
+          <div class="chrome__top__navigation">
+            <div class="chrome__system__buttons">
+              <div class="chrome__system__button red__button"></div>
+              <div class="chrome__system__button yellow__button"></div>
+              <div class="chrome__system__button green__button"></div>
+            </div>
+            <div class="chrome__tabs">
+              <p id="homePlanet" class="chrome__tab active__tab">🏠 Home</p>
+              <p id="planetsPlanet" class="chrome__tab">🌍 Planets</p>
+              <p id="bookingPlanet" class="chrome__tab">🧳 Booking</p>
+            </div>
+          </div>
+          <div class="chrome__search__box">
+            <div class="chrome__search__icons">
+              <div class="chrome__icons">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+              <div class="chrome__icons">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+              <div class="chrome__icons">
+                <i class="fas fa-redo"></i>
+              </div>
+              <div class="chrome__icons">
+                <i class="fas fa-home"></i>
+              </div>
+            </div>
+            <div class="url__box">
+              <i class="fas fa-lock locker"></i>
+              <div id="planet__url__1" class="url active__url">
+                <p>https://planet-invaders.herokuapp.com/</p>
+              </div>
+              <div id="planet__url__2" class="url">
+                <p>https://planet-invaders.herokuapp.com/planets</p>
+              </div>
+              <div id="planet__url__3" class="url">
+                <p>https://planet-invaders.herokuapp.com/planet/100</p>
+              </div>
+            </div>
+            <img class="profile__icon" src="./lucas.png" alt="">
+          </div>
+          <div class="chrome__picture">
+            <img id="planet__img__1" class="projects__img" src="./Assets/planet__invaders__1.png" alt="">
+            <img id="planet__img__2" class="projects__img" src="./Assets/planet__invaders__2.png" alt="">
+            <img id="planet__img__3" class="projects__img" src="./Assets/planet__invaders__3.png" alt="">
+          </div>
+        </div>
+        <!-- <div class="square__bar__picture">
+          <div class="flex__cube">
+            <div class="cube_1"></div>
+            <div class="cube_2"></div>
+          </div>
+          <div class="cube_3"></div>
+        </div> -->
+      </div>
+    </div>
+    <div class="projects u-centered">
+      <div class="projects__left">
+        <div class="chrome">
+          <div class="chrome__top__navigation">
+            <div class="chrome__system__buttons">
+              <div class="chrome__system__button red__button"></div>
+              <div class="chrome__system__button yellow__button"></div>
+              <div class="chrome__system__button green__button"></div>
+            </div>
+            <div class="chrome__tabs">
+              <p id="homeWhisp" class="chrome__tab active__tab">🏠 Home</p>
+              <p id="profileWhisp" class="chrome__tab">🙍‍♂️ MyProifle</p>
+              <p id="sportsWhisp" class="chrome__tab">⚽️ Sports</p>
+            </div>
+          </div>
+          <div class="chrome__search__box">
+            <div class="chrome__search__icons">
+              <div class="chrome__icons">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+              <div class="chrome__icons">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+              <div class="chrome__icons">
+                <i class="fas fa-redo"></i>
+              </div>
+              <div class="chrome__icons">
+                <i class="fas fa-home"></i>
+              </div>
+            </div>
+            <div class="url__box">
+              <i class="fas fa-lock locker"></i>
+              <div id="whisp__url__1" class="url active__url">
+                <p>https://whisp.social/</p>
+              </div>
+              <div id="whisp__url__2" class="url">
+                <p>https://whisp.social/myprofile</p>
+              </div>
+              <div id="whisp__url__3" class="url">
+                <p>https://whisp.social/sports</p>
+              </div>
+            </div>
+            <img class="profile__icon" src="./lucas.png" alt="">
+          </div>
+          <div class="chrome__picture">
+            <img id="whisp__img__1" class="projects__img" src="./Assets/whisp__1.png" alt="">
+            <img id="whisp__img__2" class="projects__img" src="./Assets/whisp__2.png" alt="">
+            <img id="whisp__img__3" class="projects__img" src="./Assets/whisp__3.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="projects__right">
+        <div class="project__description">
+          <div class="project__title">
+            <div class="project__background">
+              <h1>
+                <span>WHISP</span>
+              </h1>
+            </div>
+            <div class="title__foreground">
+              <h2>Whisp</h2>
+            </div>
+          </div>
+          <h3>// Stack</h3>
+          <div>
+            <span class="ruby">Ruby on Rails</span>
+            <span class="react">React.js</span>
+            <span class="next">Next.js</span>
+            <span class="html">Html</span>
+            <span class="css">Css</span>
+          </div>
+            <h3>// Project</h3>
+            <p>
+              Whisp brings together sports enthusiasts on the equipment topic. We help athletes to find the equipment that works best
+              for them, by helping them discover the equipment used by their favorite friends and athletes.<br />
+
+              I joinded a team of 3 developpers right after their MVP creation. At the time, the product was build in Ruby on Rails. We then moved to the first version of the product with a backend still in RoR and a frontend in React.js.
+              I was in charge to developp new features from back to front, such as the home page, the profile page & the fidelity program with the rewards. Thanks to a designer, we had a solid design ready to bed coded.<br />
+
+              After few months, we realise the issue of react hydration process and its poor performance, especially for the user who had to wait few seconds for its content to load. We also had an SEO issue.
+              That's why we moved to next.js in order to boost the product performances and improve the user experience.<br />
+
+              Overall, I really appreciated this experience. I learnt 2 news framework and reinforce my idea to spesialised myself in frontend development, something I really appreciate and looking forward to develop.
+            </p>
+            <a href="https://www.whisp.social/" target="_blank">https://www.whisp.social/</a>
+          </div>
+      </div>
+    </div>
+    <div class="projects u-centered">
+      <div class="projects__left">
+        <div class="project__description">
+          <div class="project__title">
+            <div class="project__background">
+              <h1>
+                <span>EDEN</span>
+                <span class="title__part__two">GARDEN</span>
+              </h1>
+            </div>
+            <div class="title__foreground">
+              <h2>Eden Garden (under construction)</h2>
+            </div>
+          </div>
+          <h3>// Stack</h3>
+          <div>
+            <span class="react">React.js</span>
+            <span class="next">Next.js</span>
+            <span class="html">Html</span>
+            <span class="css">Css</span>
+          </div>
+          <h3>// Project</h3>
+          <p>
+            Eden Garden is a renting cottage website. A friend of mine is renting is familly house and want to improve its current webiste. <br />
+            There is a lot of information and SEO is a huge part of the project that's why I choosed Next and React to improve its current design and boost its seo performances.
+          </p>
+        </div>
+      </div>
+      <div class="projects__right">
+        <div class="chrome">
+          <div class="chrome__top__navigation">
+            <div class="chrome__system__buttons">
+              <div class="chrome__system__button red__button"></div>
+              <div class="chrome__system__button yellow__button"></div>
+              <div class="chrome__system__button green__button"></div>
+            </div>
+            <div class="chrome__tabs">
+              <p id="homeEden" class="chrome__tab active__tab">🏠 Home</p>
+              <p id="bookingEden" class="chrome__tab">✅ Booking</p>
+              <p id="mapEden" class="chrome__tab">🗺 Map</p>
+            </div>
+          </div>
+          <div class="chrome__search__box">
+            <div class="chrome__search__icons">
+              <div class="chrome__icons">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+              <div class="chrome__icons">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+              <div class="chrome__icons">
+                <i class="fas fa-redo"></i>
+              </div>
+              <div class="chrome__icons">
+                <i class="fas fa-home"></i>
+              </div>
+            </div>
+            <div class="url__box">
+              <i class="fas fa-lock locker"></i>
+              <div id="eden__url__1" class="url active__url">
+                <p>https://eden-garden.com/</p>
+              </div>
+              <div id="eden__url__2" class="url">
+                <p>https://eden-garden.com/booking</p>
+              </div>
+              <div id="eden__url__3" class="url">
+                <p>https://eden-garden.com/map</p>
+              </div>
+            </div>
+            <img class="profile__icon" src="./lucas.png" alt="">
+          </div>
+          <img src="https://giphy.com/gifs/LmNwrBhejkK9EFP504/html5" alt="">
+          <div class="chrome__picture">
+            <img id="eden__img__1" class="projects__img" src="./Assets/cat.gif" alt="">
+            <img id="eden__img__2" class="projects__img" src="./Assets/cat2.gif" alt="">
+            <img id="eden__img__3" class="projects__img" src="./Assets/cat3.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="element__bar__red">
+    <div class="triangle__red"></div>
+    <div class="square__bar__red">
+      <div class="square_3__red"></div>
+    </div>
+  </div>
+  <div class="skills__background">
+    <div class="skills u-centered">
+      <h1>
+        Skills
+      </h1>
+      <div class="u-element">
+        <div class="skills__description">
+          <p>Number</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloribus sed voluptas voluptatum omnis voluptate officiis? Ipsam qui sunt vel nam molestias ab quibusdam, quam maiores! Cum minus tempore doloribus.</p>
+        </div>
+        <div class="skills__grid">
+          <div class="skill">
+            <i class="fab fa-react"></i>
+            <p>React.js</p>
+          </div>
+          <div class="skill">
+            <img src="./nextjs__white.png" alt="">
+            <p>Next.js</p>
+          </div>
+          <div class="skill">
+            <i class="fas fa-gem"></i>
+            <p>Ruby on rails</p>
+          </div>
+          <div class="skill">
+            <i class="fab fa-js"></i>
+            <p>Javascript</p>
+          </div>
+          <div class="skill">
+            <i class="fas fa-file-code"></i>
+            <p>Html & Css</p>
+          </div>
+          <div class="skill">
+            <i class="fas fa-hamburger"></i>
+            <p>Burger</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+
+    const projects = new Typed('#projects', {
+      strings: ["Projects"],
+      typeSpeed: 60
+    });
+
+    const skills = new Typed('#skills', {
+      strings: ["Skills"],
+      typeSpeed: 120
+    });
+
+    const about = new Typed('#about', {
+      strings: ["About"],
+      typeSpeed: 180
+    });
+
+    const lat = new Typed('.coordonates', {
+      strings: ["50.6310623 3.0121411"],
+      typeSpeed: 30
+    });
+
+    // const long = new Typed('.coordonates', {
+    //   strings: ["3.0121411"],
+    //   typeSpeed: 30
+    // });
+
+
+  anime({
+      targets: '.square__bg__1',
+      opacity: .1,
+      // keyframes: [
+      //   { translateX: 300 },
+      //   { translateX: 0 },
+      // ],
+      duration: 4000,
+      // easing: 'easeOutElastic(1, .8)',
+      loop: true
+    });
+
+    anime({
+        targets: '.animated__bar',
+        width: '100%', // -> from '28px' to '100%',
+        easing: 'easeInOutQuad',
+        // direction: 'alternate',
+        // loop: true
+      });
+
+  //     anime({
+  //         targets: '.latitude',
+  //         value: [0, 50.6310623],
+  //         // round: 1,
+  //         easing: 'easeInOutExpo'
+  //       });
+
+  //     anime({
+  //         targets: '.longitude',
+  //         value: [0, 3.0121411],
+  //         // round: 1,
+  //         easing: 'easeInOutExpo'
+  //       });
+
+</script>
+</html>
