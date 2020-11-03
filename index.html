@@ -494,15 +494,27 @@
       loop: true
     });
 
-    anime({
-        targets: '.moving__square',
-        opacity: .1,
-        keyframes: [
-          { translateX: 300 },
-          { translateX: 0 },
-        ],
-        duration: 3000,
-        loop: true
-      });
+  anime({
+      targets: '.moving__square',
+      opacity: .1,
+      keyframes: [
+        { translateX: 300 },
+        { translateX: 0 },
+      ],
+      duration: 3000,
+      easing: 'easeInOutCirc',
+      loop: true
+    });
+
+  // anime({
+  //     targets: '.ruby',
+  //     left: '240px',
+  //     backgroundColor: '#FFF',
+  //     borderRadius: ['0%', '50%'],
+  //     easing: 'easeInOutQuad',
+  //     autoplay: true
+  //   });
+
+
 </script>
 </html>
