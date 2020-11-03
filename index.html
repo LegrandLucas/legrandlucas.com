@@ -64,7 +64,8 @@
               <p class="city"><strong>Lille</strong></p>
               <p class="coordonates" id="latitude"></p>
               <p class="coordonates" id="longitude"></p>
-              <div class="square__bg__1"></div>
+              <div class="square__bg__1 turn__signal"></div>
+              <div class="square__bg__1 moving__square"></div>
             </div>
           </div>
         </div>
@@ -466,20 +467,19 @@
   </div>
 </body>
 <script>
-
     const projects = new Typed('#projects', {
       strings: ["Projects"],
-      typeSpeed: 60
+      typeSpeed: 120
     });
 
     const skills = new Typed('#skills', {
       strings: ["Skills"],
-      typeSpeed: 120
+      typeSpeed: 240
     });
 
     const about = new Typed('#about', {
-      strings: ["About"],
-      typeSpeed: 180
+      strings: ["Contact"],
+      typeSpeed: 360
     });
 
     const lat = new Typed('.coordonates', {
@@ -487,45 +487,22 @@
       typeSpeed: 30
     });
 
-    // const long = new Typed('.coordonates', {
-    //   strings: ["3.0121411"],
-    //   typeSpeed: 30
-    // });
-
-
   anime({
-      targets: '.square__bg__1',
+      targets: '.turn__signal',
       opacity: .1,
-      // keyframes: [
-      //   { translateX: 300 },
-      //   { translateX: 0 },
-      // ],
-      duration: 4000,
-      // easing: 'easeOutElastic(1, .8)',
+      duration: 3000,
       loop: true
     });
 
     anime({
-        targets: '.animated__bar',
-        width: '100%', // -> from '28px' to '100%',
-        easing: 'easeInOutQuad',
-        // direction: 'alternate',
-        // loop: true
+        targets: '.moving__square',
+        opacity: .1,
+        keyframes: [
+          { translateX: 300 },
+          { translateX: 0 },
+        ],
+        duration: 3000,
+        loop: true
       });
-
-  //     anime({
-  //         targets: '.latitude',
-  //         value: [0, 50.6310623],
-  //         // round: 1,
-  //         easing: 'easeInOutExpo'
-  //       });
-
-  //     anime({
-  //         targets: '.longitude',
-  //         value: [0, 3.0121411],
-  //         // round: 1,
-  //         easing: 'easeInOutExpo'
-  //       });
-
 </script>
 </html>

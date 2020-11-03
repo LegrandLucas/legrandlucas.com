@@ -54,6 +54,10 @@ body {
   background: var(--color-red);
 }
 
+.turn__signal {
+  position: absolute;
+}
+
 .animated__bar {
   height: 5px;
   background: var(--color-red);
