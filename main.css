@@ -267,6 +267,10 @@ header {
   opacity: 0.5;
 }
 
+.introduction__text p {
+  min-height: 50px;
+}
+
 .introduction__text #social {
   color: var(--color-red);
 }
