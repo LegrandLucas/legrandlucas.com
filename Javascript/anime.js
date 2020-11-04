@@ -1,10 +1,11 @@
+// eslint-disable-next-line no-undef
 document.addEventListener('DOMContentLoaded', () => {
-
+  // eslint-disable-next-line no-unused-expressions
   anime({
     targets: '.turn__signal',
-    opacity: .1,
+    opacity: 0.1,
     duration: 3000,
-    loop: true
+    loop: true,
   }),
 
   anime({
@@ -16,40 +17,63 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     duration: 3000,
     easing: 'easeInOutCirc',
-    loop: true
+    loop: true,
   }),
 
-    anime({
-      targets: '.moving__square__2',
-      keyframes: [
-        { translateY: 50 },
-      ],
-      duration: 2000,
-      easing: 'easeOutBounce',
-    }),
+  anime({
+    targets: '.moving__square__2',
+    keyframes: [
+      { translateY: 50 },
+    ],
+    duration: 1200,
+    easing: 'easeOutBounce',
+  }),
 
   anime({
-      targets: '.menu',
-      translateY: [-400, 0],
-      easing: 'easeOutExpo',
-      delay: 1000,
-      duration: 3000,
-      opacity: [0, 1]
-    }),
+    targets: '.menu',
+    translateY: [-400, 0],
+    easing: 'easeOutExpo',
+    delay: 1000,
+    duration: 3000,
+    opacity: [0, 1],
+  }),
 
   anime({
     targets: '.say-hi__emoji',
-    // translateY: [-400, 0],
     rotate: '1turn',
     duration: 3000,
-  })
+  }),
 
   anime({
     targets: '.contact__element',
     duration: 1500,
+  }),
+
+
+  anime({
+    targets: '.moving__arrow__right',
+    // opacity: [0, 1],
+    keyframes: [
+      { translateX: -100 },
+      { translateX: 0 },
+    ],
+    duration: 3000,
+    easing: 'easeInBounce',
+    loop: true
+  });
+
+  anime({
+    targets: '.moving__arrow__left',
+    // opacity: [0, 1],
+    keyframes: [
+      { translateX: 100 },
+      { translateX: 0 },
+    ],
+    duration: 3000,
+    easing: 'easeInBounce',
+    loop: true
   });
 });
-
 
 // document.addEventListener('.menu', ('click') => {
 //   anime({
