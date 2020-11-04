@@ -10,6 +10,13 @@
   background-color: var(--color-alabaster);
 }
 
+.class-test h1 {
+  color: var(--color-red) !important;
+  transition: 1s ease-out;
+  transform: translateY(-100px);
+}
+
+
 body {
   overflow-x: hidden;
 }
@@ -93,10 +100,11 @@ header {
 
 .square__bar {
   height: 2vh;
-    background-color: var(--color-alabaster);
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+  background-color: var(--color-alabaster);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .square__bar__picture {
@@ -172,20 +180,18 @@ header {
 }
 
 .square__1 {
-  height: 80%;
+  height: 50%;
   width: 100px;
-  margin-right: 20em;
 }
 
 .square__2 {
   height: 100%;
-  width: 300px;
-  margin-right: 10em;
+  width: 50px;
 }
 
 .square__3 {
   height: 100%;
-  width: 200px;
+  width: 100px;
 }
 
 .triangle__red__1 {
@@ -200,6 +206,12 @@ header {
   height: 0;
   border-bottom: 20px solid var(--color-alabaster);
   border-right: 20px solid transparent;
+}
+
+.modified {
+  border-bottom: 25px solid var(--color-alabaster);
+  border-right: 25px solid transparent;
+  transform: rotate(90deg);
 }
 
 .triangle__black__1 {
@@ -238,7 +250,7 @@ header {
 
 .square_3__red {
   background-color: var(--color-red);
-  height: 5px;
+  height: 25px;
   width: 200px;
   border-left: 0 solid transparent;
   border-right: 1em solid transparent;
@@ -268,11 +280,12 @@ header {
 }
 
 .introduction__text p {
-  min-height: 50px;
+  min-height: 60px;
 }
 
 .introduction__text #social {
   color: var(--color-red);
+  min-height: 0px;
 }
 
 .introduction__text #eating {
@@ -346,15 +359,14 @@ header {
   color: transparent;
 }
 
-.menu__element:hover .menu__name{
-  -webkit-text-fill-color: var(--color-alabaster);
-}
+/* .menu__element:hover .menu__name{
+} */
 
 
 .menu__element:hover .menu__name {
   color: var(--color-alabaster);
   transition: cubic-bezier(0.76, -0.08, 1, 1) width 700ms;
-
+  -webkit-text-fill-color: var(--color-alabaster);
 }
 
 .menu__element:hover #menu__arrow {
@@ -391,12 +403,27 @@ header {
     box-sizing: border-box;
 }
 
-.about {
-  background-color: var(--color-red);
-  margin: 0px;
+.contact {
+  background-color: var(--color-black);
+  margin: 0em;
+  padding: 5em;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
 }
 
-.about__title {
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 500px;
+}
+
+.contact__list h2 {
+  margin: 0;
+  word-spacing: -70px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: .1rem;
   font-family: 'Space Mono', monospace;
   font-weight: 600;
   color:var(--color-alabaster);
@@ -406,11 +433,10 @@ header {
   top: 40px
 }
 
-.about__title h2 {
-  margin: 0;
-  word-spacing: -70px;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: .1rem;
+.contact__element:hover {
+  color: var(--color-alabaster);
+  transition: cubic-bezier(0.76, -0.08, 1, 1) width 700ms;
+  -webkit-text-fill-color: var(--color-alabaster);
 }
 
 .about__main {
@@ -520,6 +546,13 @@ header {
   margin-left: .5em;
 }
 
+
+.red__square {
+  height: 10px;
+  width: 10px;
+  background: var(--color-red);
+  margin: 2em 0em;
+}
 .projects {
   display: flex;
   align-items: center;
@@ -811,6 +844,7 @@ header {
 .skills__background {
   background-color: var(--color-red);
   color: var(--color-black);
+  padding: 2em 0em;
 }
 
 .skills h1 {

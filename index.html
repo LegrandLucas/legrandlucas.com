@@ -19,7 +19,7 @@
   <script src="https://kit.fontawesome.com/6b81b22d18.js" crossorigin="anonymous"></script>
 
   <!-- Event listeners / actions JS -->
-  <script defer src="./Javascript/main.js"></script>
+  <script defer src="./Javascript/anime.js"></script>
   <script defer src="./Javascript/typed.js"></script>
   <script defer src="./Javascript/planet__script.js"></script>
   <script defer src="./Javascript/whisp__script.js"></script>
@@ -29,6 +29,9 @@
   <script src="./node_modules/animejs/lib/anime.min.js"></script>
   <script src="./node_modules/typed.js/lib/typed.min.js"></script>
   <script src="./node_modules/waypoints/lib/noframework.waypoints.js"></script>
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- <script src="jquery-3.5.1.min.js"></script> -->
 
 
   <title>Lucas Legrand</title>
@@ -89,73 +92,20 @@
   <div class="section__transition">
     <div class="triangle__bar"></div>
     <div class="square__bar">
-      <div class="square__1 black">
+      <div class="square__1 red">
           <div class="triangle__white__1"></div>
       </div>
       <div>
-        <div class="square__2 black">
+        <div class="square__2 red">
           <div class="triangle__white__1"></div>
         </div>
       </div>
-      <div class="square__3 black">
+      <div class="square__3 red">
           <div class="triangle__white__1"></div>
       </div>
     </div>
   </div>
-  <!-- <section class="about">
-    <div class="about__title">
-      <h2>
-        <span>
-          WHO AM I
-        </span>
-      </h2>
-    </div>
-    <div class="about__main">
-      <div class="about__left">
-        <div class="main__pictures">
-          <img id="pic__1" src="./Assets/lucas_hd.JPG" alt="" class="about__picture">
-        </div>
-      </div>
-      <div class="about__right">
-        <div class="about__description">
-          <h1>Very honest description</h1>
-          <p>
-            I'm a former marketer graduated from Coventry University. I started my career as a IOT startup specialist and then moved
-            to Paris to pursue my dream: work within the eSport industry.
 
-            After 2 years as the manager of one of the most dominant french esport team, I switch my career path and dived into
-            code.
-
-            I did Le Wagon, a coding bootcamp where I learnt how to code and all the best practices.
-
-            I'm passionate, curious and looking to grow. I'm actively looking for a new opportunity as a Frontend developper.
-          </p>
-          <h2>Qualities</h2>
-          <ul>
-            <li>Passionate</li>
-            <li>Curious</li>
-            <li>Easy to deal with</li>
-          </ul>
-          <h2>Defaults</h2>
-            <ul>
-              <li>Impatient</li>
-              <li>Messy</li>
-              <li>Anxious</li>
-            </ul>
-          <div class="element__cube__line">
-            <div class="element__cube"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- <div class="section__transition transition__to__white">
-    <div class="square__bar">
-        <div class="square__2 red">
-          <div class="triangle__white__1"></div>
-        </div>
-    </div>
-  </div> -->
   <section>
     <div class="projects u-centered">
       <div class="projects__left">
@@ -194,6 +144,9 @@
             versionning tools such as git and github.
           </p>
           <a href="https://planet-invaders.herokuapp.com/" target="_blank">https://planet-invaders.herokuapp.com/</a> (takes few seconds to load)
+          <div class="squares__container">
+              <div class="red__square moving__square__2"></div>
+          </div>
         </div>
       </div>
       <div class="projects__right">
@@ -245,13 +198,6 @@
             <img id="planet__img__3" class="projects__img" src="./Assets/planet__invaders__3.png" alt="">
           </div>
         </div>
-        <!-- <div class="square__bar__picture">
-          <div class="flex__cube">
-            <div class="cube_1"></div>
-            <div class="cube_2"></div>
-          </div>
-          <div class="cube_3"></div>
-        </div> -->
       </div>
     </div>
     <div class="projects u-centered">
@@ -265,7 +211,7 @@
             </div>
             <div class="chrome__tabs">
               <p id="homeWhisp" class="chrome__tab active__tab">🏠 Home</p>
-              <p id="profileWhisp" class="chrome__tab">🙍‍♂️ MyProifle</p>
+              <p id="profileWhisp" class="chrome__tab">🙍‍♂️ MyProfile</p>
               <p id="sportsWhisp" class="chrome__tab">⚽️ Sports</p>
             </div>
           </div>
@@ -426,7 +372,9 @@
   <div class="element__bar__red">
     <div class="triangle__red"></div>
     <div class="square__bar__red">
-      <div class="square_3__red"></div>
+      <div class="square_3__red">
+          <div class="triangle__white__1 modified"></div>
+      </div>
     </div>
   </div>
   <div class="skills__background">
@@ -468,5 +416,55 @@
       </div>
     </div>
   </div>
+  <div class="square__bar black">
+    <div class="square__3 red">
+      <div class="triangle__black__1"></div>
+    </div>
+    <div class="square__1 red">
+      <div class="triangle__black__1"></div>
+    </div>
+    <div class="square__2 red">
+      <div class="triangle__black__1"></div>
+    </div>
+    <div class="square__1 red">
+      <div class="triangle__black__1"></div>
+    </div>
+  </div>
+
+  <section class="contact">
+      <div class="contact__list">
+        <h2>
+          <span class="contact__element">Email</span>
+          <span class="contact__element">Linkedin</span>
+          <span class="contact__element">Twitter</span>
+          <span class="contact__element">CV</span>
+        </h2>
+      </div>
+    </section>
 </body>
+
+<script>
+  $(function () {
+    const title = document.querySelector('.project__background');
+
+    $('title').each(function () {
+      var off = $(this).offset().top
+      $(this).data('orig-offset', off);
+    });
+    $(window).scroll(function () {
+      var scrollTop = $(window).scrollTop();
+
+      $('title').each(function () {
+        var off = $(this).data('orig-offset');
+
+
+        if (scrollTop >= off) {
+          var translate = (scrollTop - off) / $(window).height() * 100;
+          console.log(translate);
+          $(this).css({ transform: 'translateY(' + translate + '%)' });
+        }
+      });
+    });
+  });
+</script>
 </html>
