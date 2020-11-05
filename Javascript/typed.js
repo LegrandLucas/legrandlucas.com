@@ -2,7 +2,7 @@
 
 const lat = new Typed('.coordonates', {
   strings: ["50.6310623 3.0121411"],
-  typeSpeed: 30,
+  typeSpeed: 100,
 });
 
 const introText = new Typed('.intro__text', {
