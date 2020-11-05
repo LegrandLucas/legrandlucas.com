@@ -1,4 +1,22 @@
 // eslint-disable-next-line no-undef
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const waypoint = new Waypoint({
+//     element: document.querySelector('#contact__waypoint'),
+//     handler() {
+//       anime({
+//         targets: '.contact__element',
+//         translateY: [-400, 0],
+//         easing: 'easeOutExpo',
+//         delay: 1000,
+//         duration: 3000,
+//         opacity: [0, 1],
+//       });
+//     },
+//     offset: '100%',
+//   });
+// });
+
 document.addEventListener('DOMContentLoaded', () => {
   // eslint-disable-next-line no-unused-expressions
   anime({
@@ -45,11 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }),
 
   anime({
-    targets: '.contact__element',
-    duration: 1500,
-  }),
-
-  anime({
     targets: '.moving__arrow__right',
     keyframes: [
       { translateX: -100 },
@@ -69,5 +82,20 @@ document.addEventListener('DOMContentLoaded', () => {
     duration: 3000,
     easing: 'easeInBounce',
     loop: true,
+  });
+
+  const waypoint = new Waypoint({
+    element: document.querySelector('#contact__waypoint'),
+    handler() {
+      anime({
+        targets: '.contact__element',
+        translateY: [-400, 0],
+        easing: 'easeOutExpo',
+        delay: 1000,
+        duration: 3000,
+        opacity: [0, 1],
+      });
+    },
+    offset: '100%',
   });
 });
