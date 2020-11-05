@@ -10,15 +10,12 @@
   background-color: var(--color-alabaster);
 }
 
-.class-test h1 {
-  color: var(--color-red) !important;
-  transition: 1s ease-out;
-  transform: translateY(-100px);
-}
-
-
 body {
   overflow-x: hidden;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .container {
@@ -866,8 +863,8 @@ header {
 }
 
 .skills__description {
-  min-width: 200px;
-  max-width: 400px;
+  /* min-width: 200px; */
+  max-width: 500px;
 }
 
 .skills__grid {

@@ -109,7 +109,7 @@
   <section>
     <div class="projects u-centered">
       <div class="projects__left">
-        <div class="project__description">
+        <div class="project__description justify">
           <div class="project__title">
             <div class="project__background">
               <h1>
@@ -131,21 +131,20 @@
           <h3>// Project</h3>
           <p>
             Planet invaders is a one week team project made at Le Wagon. It's a copycat of Airbnb where you can rent planets
-            based
-            on Star Wars Universe.
-            It was my first team project and we basically used everything we learn't during the bootcamp. We designed first
-            a
-            wireframe on figma and then coded the plateform.
-            The backend is on ruby on rails with a standard mvc model and the database is in MySql, using active record for
-            our
-            requests.
+            based on Star Wars Universe.
+            It was my first team project and we basically used everything we learnt during the bootcamp. We designed first
+            a wireframe on figma and then coded the plateform.
+            The backend is on ruby on rails with a standard mvc model and the database is in sql, using active record for
+            our requests.
             For the the frontend, we used traditional html, css & javascript.
             Overall, it was a very interesting project where I learn't to collaborate with others and how to really use
             versionning tools such as git and github.
           </p>
+          <p>log: thejedidetatooined@ordrejedi.com
+          pwd: azerty</p>
           <a href="https://planet-invaders.herokuapp.com/" target="_blank">https://planet-invaders.herokuapp.com/</a> (takes few seconds to load)
           <div class="squares__container">
-              <div class="red__square moving__square__2"></div>
+              <div class="red__square"></div>
           </div>
         </div>
       </div>
@@ -252,7 +251,7 @@
         </div>
       </div>
       <div class="projects__right">
-        <div class="project__description">
+        <div class="project__description justify">
           <div class="project__title">
             <div class="project__background">
               <h1>
@@ -285,12 +284,15 @@
               Overall, I really appreciated this experience. I learnt 2 news framework and reinforce my idea to spesialised myself in frontend development, something I really appreciate and looking forward to develop.
             </p>
             <a href="https://www.whisp.social/" target="_blank">https://www.whisp.social/</a>
+            <div class="squares__container">
+              <div class="red__square"></div>
+            </div>
           </div>
       </div>
     </div>
     <div class="projects u-centered">
       <div class="projects__left">
-        <div class="project__description">
+        <div class="project__description justify">
           <div class="project__title">
             <div class="project__background">
               <h1>
@@ -314,6 +316,10 @@
             Eden Garden is a renting cottage website. A friend of mine is renting is familly house and want to improve its current webiste. <br />
             There is a lot of information and SEO is a huge part of the project that's why I choosed Next and React to improve its current design and boost its seo performances.
           </p>
+            <a href="#" target="_blank">https://www.underconstruction/</a>
+          <div class="squares__container">
+            <div class="red__square"></div>
+          </div>
         </div>
       </div>
       <div class="projects__right">
@@ -379,13 +385,18 @@
   </div>
   <div class="skills__background">
     <div class="skills u-centered">
-      <h1>
-        Skills
-      </h1>
+      <h1>Skills</h1>
       <div class="u-element">
-        <div class="skills__description">
-          <p>Number</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloribus sed voluptas voluptatum omnis voluptate officiis? Ipsam qui sunt vel nam molestias ab quibusdam, quam maiores! Cum minus tempore doloribus.</p>
+        <div class="skills__description justify">
+          <p>
+            I've learnt most of those skills at Le wagon, a cooding bootcamp that teaches students to develop web applications from scratch. I learnt Ruby, Rails, HTML/CSS, Javascript, SQL and all the soft skills and best practices necessary to work on a web-product.
+            After this bootcamp, I had the opportunity to work on a web project built on Ruby on Rails, React.js and Next.js. I helped whisp to develop their mvp into the first version of their product. This is where is I fall in love in frontend development.
+            I'm really looking to thrive as a frontend developper and learn new technologies such as Vue.js, Three.js and webgl.
+          </p>
+          <p><strong>// Soft skills</strong></p>
+          <p>Project management, interviews, public presentation.</p>
+          <p><strong>// Softwares & tools</strong></p>
+          <p>Git, Github, Gitlab, Sql, Jira, Trello, Photoshop, Premiere Pro, Imovie.</p>
         </div>
         <div class="skills__grid">
           <div class="skill">
@@ -454,27 +465,27 @@
 </body>
 
 <script>
-  $(function () {
-    const title = document.querySelector('.project__background');
+  // $(function () {
+  //   const title = document.querySelector('.project__background');
 
-    $('title').each(function () {
-      var off = $(this).offset().top
-      $(this).data('orig-offset', off);
-    });
-    $(window).scroll(function () {
-      var scrollTop = $(window).scrollTop();
+  //   $('title').each(function () {
+  //     var off = $(this).offset().top
+  //     $(this).data('orig-offset', off);
+  //   });
+  //   $(window).scroll(function () {
+  //     var scrollTop = $(window).scrollTop();
 
-      $('title').each(function () {
-        var off = $(this).data('orig-offset');
+  //     $('title').each(function () {
+  //       var off = $(this).data('orig-offset');
 
 
-        if (scrollTop >= off) {
-          var translate = (scrollTop - off) / $(window).height() * 100;
-          console.log(translate);
-          $(this).css({ transform: 'translateY(' + translate + '%)' });
-        }
-      });
-    });
-  });
+  //       if (scrollTop >= off) {
+  //         var translate = (scrollTop - off) / $(window).height() * 100;
+  //         console.log(translate);
+  //         $(this).css({ transform: 'translateY(' + translate + '%)' });
+  //       }
+  //     });
+  //   });
+  // });
 </script>
 </html>

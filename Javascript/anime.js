@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }),
 
   anime({
-    targets: '.menu',
+    targets: ['.menu', '.contact__element'],
     translateY: [-400, 0],
     easing: 'easeOutExpo',
     delay: 1000,
@@ -49,38 +49,25 @@ document.addEventListener('DOMContentLoaded', () => {
     duration: 1500,
   }),
 
-
   anime({
     targets: '.moving__arrow__right',
-    // opacity: [0, 1],
     keyframes: [
       { translateX: -100 },
       { translateX: 0 },
     ],
     duration: 3000,
     easing: 'easeInBounce',
-    loop: true
+    loop: true,
   });
 
   anime({
     targets: '.moving__arrow__left',
-    // opacity: [0, 1],
     keyframes: [
       { translateX: 100 },
       { translateX: 0 },
     ],
     duration: 3000,
     easing: 'easeInBounce',
-    loop: true
+    loop: true,
   });
 });
-
-// document.addEventListener('.menu', ('click') => {
-//   anime({
-//     targets: '.menu',
-//     translateY: [- 400, 0],
-//     easing: 'easeOutExpo',
-//     duration: 4000,
-//     opacity: [0, 1]
-//   }),
-// });
