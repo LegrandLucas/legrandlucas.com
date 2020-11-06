@@ -558,6 +558,12 @@ header {
   background: var(--color-red);
   margin: 2em 0em;
 }
+
+.display__right {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .projects {
   display: flex;
   align-items: center;

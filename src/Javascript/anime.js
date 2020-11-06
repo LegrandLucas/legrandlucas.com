@@ -39,15 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }),
 
   anime({
-    targets: '.moving__square__2',
-    keyframes: [
-      { translateY: 50 },
-    ],
-    duration: 1200,
-    easing: 'easeOutBounce',
-  }),
-
-  anime({
     targets: ['.menu', '.contact__element'],
     translateY: [-400, 0],
     easing: 'easeOutExpo',
@@ -84,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: true,
   });
 
-  const waypoint = new Waypoint({
+  const Waycontact = new Waypoint({
     element: document.querySelector('#contact__waypoint'),
     handler() {
       anime({
@@ -97,5 +88,61 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     },
     offset: '100%',
+  });
+
+  const WayBye = new Waypoint({
+    element: document.querySelector('#contact__waypoint'),
+    handler() {
+      anime({
+        targets: ['.wkit', '.thankyou'],
+        translateX: [-400, 0],
+        easing: 'easeOutExpo',
+        delay: 2000,
+        duration: 3000,
+        opacity: [0, 1],
+      });
+    },
+    offset: '100%',
+  });
+
+  const WaySquarePlanet = new Waypoint({
+    element: document.querySelector('#planet__invaders'),
+    handler() {
+      anime({
+        targets: '.moving__square__planet',
+        keyframes: [
+          { translateY: 50 },
+        ],
+        duration: 1200,
+        easing: 'easeOutBounce',
+      });
+    },
+  });
+
+  const WaySquareWhisp = new Waypoint({
+    element: document.querySelector('#whisp'),
+    handler() {
+      anime({
+        targets: '.moving__square__whisp',
+        keyframes: [
+          { translateY: 50 },
+        ],
+        duration: 1200,
+        easing: 'easeOutBounce',
+      });
+    },
+  });
+  const WaySquareEden = new Waypoint({
+    element: document.querySelector('#eden__garden'),
+    handler() {
+      anime({
+        targets: '.moving__square__eden',
+        keyframes: [
+          { translateY: 50 },
+        ],
+        duration: 1200,
+        easing: 'easeOutBounce',
+      });
+    },
   });
 });
