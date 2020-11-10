@@ -1,7 +1,7 @@
 {
   "name": "mywebsite",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lucas Legrand's personal website.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,10 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^2.5.6",
     "animejs": "^3.2.1",
+    "ejs": "^2.5.6",
     "express": "^4.17.1",
-    "jquery": "^3.5.1",
     "typed.js": "^2.0.11",
     "waypoint": "^0.2.8",
     "waypoints": "^4.0.1"
