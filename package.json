@@ -16,5 +16,8 @@
     "typed.js": "^2.0.11",
     "waypoint": "^0.2.8",
     "waypoints": "^4.0.1"
+  },
+  "engines": {
+    "node": "14.4.0"
   }
 }
