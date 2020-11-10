@@ -18,10 +18,11 @@ app.get('/', (req, res) => {
   res.sendFile(`${__dirname}/src/views/pages/index.html`);
 });
 
-// css
-app.use(express.static(`${__dirname}/src/`));
-// scripts
-app.use(express.static(`${__dirname}/src/Javascript/`));
+// public
+app.use(express.static('./src/public'));
+app.use(express.static('./node_modules/animejs/lib'));
+// app.use(express.static('./node_modules/aniemjs/lib'));
+// app.use(express.static('./node_modules/aniemjs/lib'));
 
 app.listen(port, () => {
   console.log(`Example app is listening on port http://localhost:${port}`);
