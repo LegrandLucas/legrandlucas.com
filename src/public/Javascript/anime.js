@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: true,
   });
 
-  const Waycontact = new Waypoint({
+  const contactLinks = new Waypoint({
     element: document.querySelector('#contact__waypoint'),
     handler() {
       anime({
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     element: document.querySelector('#contact__waypoint'),
     handler() {
       anime({
-        targets: ['.wkit', '.thankyou'],
+        targets: ['.wkit__container', '.thankyou__container'],
         translateX: [-400, 0],
         easing: 'easeOutExpo',
         delay: 2000,
@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     },
   });
+
   const WaySquareEden = new Waypoint({
     element: document.querySelector('#eden__garden'),
     handler() {
