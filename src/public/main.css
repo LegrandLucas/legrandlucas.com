@@ -490,28 +490,26 @@ header {
   opacity: .5;
   font-size: 20px;
   line-height: 20px;
-  margin: 4em 0em;
 }
 .wkit {
   max-width: 110px;
 }
 
 
-.thanks__container {
+.thankyou__container {
   position: absolute;
   position: absolute;
   bottom: 0px;
   right: -950px;
 }
 
-.thanks__container h2 {
+.thankyou__container h2 {
   opacity: .5;
   font-size: 20px;
   line-height: 20px;
-  margin: -2em 0em;
 }
 
-.thankYou {
+.thankyou {
   width: 200px;
   height: 20px;
   max-width: 200px;
