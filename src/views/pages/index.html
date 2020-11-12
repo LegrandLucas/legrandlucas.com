@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-  <link href='./main.css' rel="stylesheet" href="">
+  <link href='main.css' rel="stylesheet">
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -19,22 +19,20 @@
   <script src="https://kit.fontawesome.com/6b81b22d18.js" crossorigin="anonymous"></script>
 
   <!-- Event listeners / actions JS -->
-  <script defer src="./Javascript/anime.js"></script>
-  <script defer src="./Javascript/typed.js"></script>
-  <script defer src="./Javascript/planet__script.js"></script>
-  <script defer src="./Javascript/whisp__script.js"></script>
-  <script defer src="./Javascript/eden__script.js"></script>
+  <script defer src="Javascript/anime.js"></script>
+  <script defer src="Javascript/typed.js"></script>
+  <!-- <script defer src="../../Javascript/typed.js"></script>
+  <script defer src="../../Javascript/planet__script.js"></script>
+  <script defer src="../../Javascript/whisp__script.js"></script>
+  <script defer src="../../Javascript/eden__script.js"></script> -->
 
-  <script defer src="./Javascript/background__script.js"></script>
-  <script src="../node_modules/animejs/lib/anime.min.js"></script>
-  <script src="../node_modules/typed.js/lib/typed.min.js"></script>
-  <script src="../node_modules/waypoints/lib/noframework.waypoints.js"></script>
 
-  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-  <!-- <script src="jquery-3.5.1.min.js"></script> -->
+  <script src="anime.min.js"></script>
+  <script src="typed.min.js"></script>
+  <script src="noframework.waypoints.min.js"></script>
 
   <title>Lucas Legrand</title>
-  <link rel="shortcut icon" href="./Assets/burger.png" />
+  <link rel="shortcut icon" href="../../Assets/burger.png" />
 </head>
 <body>
   <header>
@@ -42,7 +40,7 @@
       <div class="u-grid">
         <div class="introduction transition-left">
           <div class="say-hi">
-            <img class="lucas__picture"src="lucas.png" alt="">
+            <img class="lucas__picture" src="../../Assets/lucas.png" alt="">
             <div class="say-hi__text">
               <h1>Hello</h1>
               <h1>There</h1>
@@ -189,7 +187,7 @@
                 <p>https://planet-invaders.herokuapp.com/planet/100</p>
               </div>
             </div>
-            <img class="profile__icon" src="./lucas.png" alt="">
+            <img class="profile__icon" src="../../Assets/lucas.png" alt="">
           </div>
           <div class="chrome__picture">
             <img id="planet__img__1" class="projects__img" src="./Assets/planet__invaders__1.png" alt="">
@@ -241,7 +239,7 @@
                 <p>https://whisp.social/sports</p>
               </div>
             </div>
-            <img class="profile__icon" src="./lucas.png" alt="">
+            <img class="profile__icon" src="../../Assets/lucas.png" alt="">
           </div>
           <div class="chrome__picture">
             <img id="whisp__img__1" class="projects__img" src="./Assets/whisp__1.png" alt="">
@@ -363,7 +361,7 @@
                 <p>https://eden-garden.com/map</p>
               </div>
             </div>
-            <img class="profile__icon" src="./lucas.png" alt="">
+            <img class="profile__icon" src="../../Assets/lucas.png" alt="">
           </div>
           <img src="https://giphy.com/gifs/LmNwrBhejkK9EFP504/html5" alt="">
           <div class="chrome__picture">
@@ -463,29 +461,4 @@
       </div>
     </section>
 </body>
-
-<script>
-  // $(function () {
-  //   const title = document.querySelector('.project__background');
-
-  //   $('title').each(function () {
-  //     var off = $(this).offset().top
-  //     $(this).data('orig-offset', off);
-  //   });
-  //   $(window).scroll(function () {
-  //     var scrollTop = $(window).scrollTop();
-
-  //     $('title').each(function () {
-  //       var off = $(this).data('orig-offset');
-
-
-  //       if (scrollTop >= off) {
-  //         var translate = (scrollTop - off) / $(window).height() * 100;
-  //         console.log(translate);
-  //         $(this).css({ transform: 'translateY(' + translate + '%)' });
-  //       }
-  //     });
-  //   });
-  // });
-</script>
 </html>
