@@ -13,6 +13,7 @@ app.use(express.static('./src/assets'));
 app.use(express.static('./node_modules/animejs/lib'));
 app.use(express.static('./node_modules/typed.js/lib'));
 app.use(express.static('./node_modules/waypoints/lib'));
+app.use(express.static('./node_modules/aos/dist'));
 
 app.listen(port, () => {
   console.log(`Example app is listening on port http://localhost:${port}`);
