@@ -910,11 +910,11 @@ header {
 }
 
 .wrapper{
-    width: 800px;
-    height: 400px;
-    overflow: auto;
-    padding: .5em 0em;
-    margin: 10px;
+  width: 800px;
+  height: 400px;
+  overflow: auto;
+  padding: .5em 0em;
+  margin: 10px;
 }
 
 .projects__img {
@@ -970,10 +970,9 @@ header {
   }
 
   .chrome {
-    display: none;
-    /* max-width: 600px;
+    max-width: 600px;
     width: 100%;
-    margin: 0; */
+    margin: 0;
   }
 
   .url {
@@ -1000,6 +999,10 @@ header {
     font-size: 50px;
   }
 
+  .skill img {
+    width: 80px;
+  }
+
   .contact__list h2 {
     font-size: 40px;
     line-height: 100px;
@@ -1016,5 +1019,6 @@ header {
   .ruby, .react, .next, .html, .css, .javascript {
     padding: 5px;
     font-size: 15px;
+    margin: 10px 0px;
   }
 }
