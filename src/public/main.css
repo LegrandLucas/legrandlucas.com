@@ -648,11 +648,11 @@ header {
 
 .chrome {
   overflow: hidden;
-  width: 90%;
   max-width: 900px;
   margin: 0px 50px;
   border-radius: 10px 10px 12px 12px;
   background-color: #fff;
+  box-sizing: border-box
 }
 
 .chrome__top__navigation {
@@ -962,9 +962,7 @@ header {
   }
 
   .chrome {
-    width: auto;
     margin: 20px 0px;
-    box-sizing: border-box
   }
 
   .url {
