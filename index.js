@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -9,7 +10,9 @@ app.get('/', (req, res) => {
 
 // public
 app.use(express.static('./src/public'));
-app.use(express.static('./src/assets'));
+// app.use(express.static('./src/assets'));
+app.use(express.static(path.join(__dirname, 'assets')));
+
 app.use(express.static('./node_modules/animejs/lib'));
 app.use(express.static('./node_modules/typed.js/lib'));
 app.use(express.static('./node_modules/waypoints/lib'));
