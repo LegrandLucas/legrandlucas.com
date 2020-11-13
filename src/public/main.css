@@ -921,7 +921,7 @@ header {
   width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   header {
     height: 100%;
     background: var(--color-black);
@@ -970,8 +970,13 @@ header {
   }
 
   .chrome {
-    max-width: 450px;
-    margin: 20px 0px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .url {
+    font-size: 10px;
   }
 
   .skills__container {
