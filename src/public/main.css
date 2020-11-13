@@ -647,18 +647,10 @@ header {
 
 
 .chrome {
-  z-index: 1;
-  display: flex;
   overflow: hidden;
   width: 90%;
-  height: 90%;
-  max-height: 600px;
   max-width: 900px;
   margin: 0px 50px;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   border-radius: 10px 10px 12px 12px;
   background-color: #fff;
 }
@@ -970,8 +962,8 @@ header {
   }
 
   .chrome {
-    width: auto;
-    margin: 0;
+    width: 430px;
+    margin: 20px 0px;
   }
 
   .url {
