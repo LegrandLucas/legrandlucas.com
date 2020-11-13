@@ -962,8 +962,9 @@ header {
   }
 
   .chrome {
-    width: 430px;
+    width: auto;
     margin: 20px 0px;
+    box-sizing: border-box
   }
 
   .url {
