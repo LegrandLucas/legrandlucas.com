@@ -404,7 +404,6 @@ header {
   background-color: var(--color-black);
   margin: 0em;
   padding: 5em;
-  min-height: 600px;
   display: flex;
   justify-content: center;
 }
@@ -583,7 +582,10 @@ header {
 
 .project__description {
   max-width: 500px;
-  min-width: 500px;
+}
+
+.project__title {
+  text-align: initial;
 }
 
 .projects__id {
@@ -653,8 +655,6 @@ header {
   height: 90%;
   max-height: 600px;
   max-width: 900px;
-  min-height: 420px;
-  min-width: 700px;
   margin: 0px 50px;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
@@ -734,7 +734,6 @@ header {
   background-color: hsla(0,0%,93.3%,0);
   -webkit-transition: background-color .1s ease-in-out;
   cursor: pointer;
-
 }
 
 .active__tab {
@@ -860,7 +859,7 @@ header {
   font-family: 'Space Mono', monospace;
 }
 
-.u-element {
+.skills__container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -923,25 +922,64 @@ header {
   width: 100%;
 }
 
-@media screen and (min-width: 767px) {
-  .bar__nav-toggle {
+@media screen and (max-width: 767px) {
+  header {
+    height: 110vh;
+    background: var(--color-black);
+  }
+
+  .u-grid {
+    flex-direction: column;
+  }
+
+  .introduction {
+    padding: 0;
+    margin-top: 100px;
+  }
+
+  .menu__name {
+    font-size: 60px;
+  }
+
+  .menu__element {
+    margin-bottom: -3em;
+    margin-left: -170px;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  #whisp {
+    flex-direction: column-reverse;
+  }
+
+  .squares__container {
     display: none;
   }
 
-  .nav {
-    display: initial;
-    position: static;
-    width: unset;
-    height: unset;
-    padding: unset;
-    background: transparent;
+  .chrome {
+    min-width: 450px;
+    margin: 20px 0px ;
   }
 
-  .nav__link {
-    border-bottom: none;
+  .skills__container {
+    flex-direction: column;
   }
 
-  .nav__link:not(:last-of-type) {
-    margin-right: 24px;
+  .skills__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
+  }
+
+  .skill {
+    height: 200px;
+    width: 200px;
+  }
+
+  .contact__list h2 {
+    font-size: 50px;
+    line-height: 100px;
   }
 }
