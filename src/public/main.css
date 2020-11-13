@@ -989,4 +989,12 @@ header {
     font-size: 40px;
     line-height: 100px;
   }
+
+  .wkit__container {
+    display: none;
+  }
+
+  .thankyou__container {
+    display: none;
+  }
 }
