@@ -936,6 +936,10 @@ header {
     margin-top: 100px;
   }
 
+  .menu {
+    margin-bottom: 5em;
+  }
+
   .menu__name {
     font-size: 60px;
   }
@@ -958,8 +962,8 @@ header {
   }
 
   .project__background h1 {
-    line-height: 100px;
-    font-size: 80px;
+    line-height: 80px;
+    font-size: 60px;
     margin-top: -100px;
     top: 0px;
     left: -30px;
@@ -996,5 +1000,10 @@ header {
 
   .thankyou__container {
     display: none;
+  }
+
+  .ruby, .react, .next, .html, .css, .javascript {
+    padding: 5px;
+    font-size: 15px;
   }
 }
