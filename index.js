@@ -6,12 +6,12 @@ const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
   res.sendFile(`${__dirname}/src/views/pages/index.html`);
+  res.sendFile(`${__dirname}/src/assets`);
 });
 
 // public
 app.use(express.static('./src/public'));
-// app.use(express.static('./src/assets'));
-app.use(express.static(path.join(__dirname, 'assets')));
+app.use(express.static('./src/assets'));
 
 app.use(express.static('./node_modules/animejs/lib'));
 app.use(express.static('./node_modules/typed.js/lib'));

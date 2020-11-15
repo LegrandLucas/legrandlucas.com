@@ -128,27 +128,3 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 });
-
-// if (window.innerWidth > 540) {
-//   anime({
-//     targets: '.moving__arrow__right',
-//     keyframes: [
-//       { translateX: -100 },
-//       { translateX: 0 },
-//     ],
-//     duration: 3000,
-//     easing: 'easeInBounce',
-//     loop: true,
-//   });
-
-//   anime({
-//     targets: '.moving__arrow__left',
-//     keyframes: [
-//       { translateX: 100 },
-//       { translateX: 0 },
-//     ],
-//     duration: 3000,
-//     easing: 'easeInBounce',
-//     loop: true,
-//   });
-// }
