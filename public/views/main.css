@@ -651,7 +651,7 @@ header {
   margin: 0px 50px;
   border-radius: 10px 10px 12px 12px;
   background-color: #fff;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .chrome__top__navigation {
@@ -774,6 +774,7 @@ header {
 .chrome__picture img {
   min-width: 700px;
   max-height: 400px;
+  max-width: 800px;
   object-fit: cover;
 }
 
@@ -914,9 +915,9 @@ header {
   margin: 10px;
 }
 
-.projects__img {
+/* .projects__img {
   width: 100%;
-}
+} */
 
 @media (max-width: 540px) {
   header {
@@ -972,8 +973,9 @@ header {
   }
 
 .chrome__picture img {
-  min-width: 400px;
-  object-fit: cover;
+  max-width: 435px;
+  min-width: 430px;
+  min-height: 100px;
 }
 
   .url {
