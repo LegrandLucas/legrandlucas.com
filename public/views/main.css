@@ -645,7 +645,6 @@ header {
   font-family: 'Space Mono', monospace;
 }
 
-
 .chrome {
   overflow: hidden;
   max-width: 900px;
@@ -770,6 +769,12 @@ header {
 
 .chrome__icons {
   opacity: .2;
+}
+
+.chrome__picture img {
+  min-width: 700px;
+  max-height: 400px;
+  object-fit: cover;
 }
 
 .url__box {
@@ -963,7 +968,13 @@ header {
 
   .chrome {
     margin: 20px 0px;
+    min-width: 400px;
   }
+
+.chrome__picture img {
+  min-width: 400px;
+  object-fit: cover;
+}
 
   .url {
     font-size: 10px;
