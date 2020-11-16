@@ -572,11 +572,11 @@ header {
 }
 
 .projects__left {
-  margin: auto;
+  margin: 10px;
 }
 
 .projects__right {
-  margin: auto;
+  margin: 10px;
 }
 
 .project__description {
@@ -934,6 +934,10 @@ header {
     margin-top: 100px;
   }
 
+  .say-hi {
+    font-size: 25px
+  }
+
   .menu {
     margin-bottom: 5em;
   }
@@ -969,16 +973,22 @@ header {
 
   .chrome {
     margin: 20px 0px;
-    min-width: 400px;
+    max-width: 350px;
   }
 
   .chrome__system__buttons {
     width: 50px;
   }
+
   .chrome__picture img {
-    max-width: 435px;
-    min-width: 430px;
+    max-width: 350px;
+    min-width: 350px;
     min-height: 100px;
+  }
+
+  .chrome__tab {
+    font-size: 15px;
+    padding: 0px 2px;
   }
 
   .url {
@@ -1022,9 +1032,14 @@ header {
     display: none;
   }
 
+  .stack {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .ruby, .react, .next, .html, .css, .javascript {
     padding: 5px;
     font-size: 15px;
-    margin: 10px 0px;
+    margin: 5px 5px;
   }
 }
