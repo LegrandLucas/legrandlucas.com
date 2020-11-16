@@ -407,7 +407,7 @@ header {
 .contact {
   background-color: var(--color-black);
   margin: 0em;
-  padding: 5em;
+  padding: 2em 5em;
   display: flex;
   justify-content: center;
 }
@@ -420,7 +420,6 @@ header {
 
 .contact__list h2 {
   margin: 0;
-  word-spacing: -70px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: .1rem;
   font-family: 'Space Mono', monospace;
@@ -483,11 +482,13 @@ header {
   position: relative;
   display: flex;
   color: var(--color-red);
+  height: 90vh;
 }
+
 .wkit__container {
   position: absolute;
   top: 0px;
-  left: -300px;
+  left: -110px;
 }
 .wkit__container h2 {
   opacity: .5;
@@ -498,12 +499,11 @@ header {
   max-width: 110px;
 }
 
-
 .thankyou__container {
   position: absolute;
   position: absolute;
   bottom: 0px;
-  right: -950px;
+  right: -1200px;
 }
 
 .thankyou__container h2 {
@@ -1023,9 +1023,13 @@ header {
     width: 80px;
   }
 
+  .contact__background {
+    height: 40vh;
+  }
+
   .contact__list h2 {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 22px;
+    line-height: 45px;
   }
 
   .wkit__container {
