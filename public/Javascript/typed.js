@@ -6,6 +6,6 @@ const lat = new Typed('.coordonates', {
 });
 
 const introText = new Typed('.intro__text', {
-  strings: ["I'm a frontend developper turning code into beautiful websites. Love hiking, eating and making burgers."],
+  strings: ["I'm a fullstack web developper turning code into beautiful websites. Love hiking, eating and making burgers."],
   typeSpeed: 30,
 });
