@@ -3,10 +3,10 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.get('*', (req, res, next) => {
-  if (req.headers['x-forwarded-proto'] !== 'https') res.redirect(`https://legrandlucas.com${req.url}`);
-  else next();
-});
+// app.get('*', (req, res, next) => {
+//   if (req.headers['x-forwarded-proto'] !== 'https') res.redirect(`https://legrandlucas.com${req.url}`);
+//   else next();
+// });
 
 // // public
 app.use(express.static('./public'));

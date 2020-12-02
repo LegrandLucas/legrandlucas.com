@@ -1,55 +1,53 @@
-const homeEden = document.getElementById('homeEden');
-const bookingEden = document.getElementById('bookingEden');
-const mapEden = document.getElementById('mapEden');
+const homePizza = document.getElementById('homePizza');
+const allPizza = document.getElementById('allPizza');
+const orderPizza = document.getElementById('orderPizza');
 
-const imgEden1 = document.getElementById('eden__img__1');
-const imgEden2 = document.getElementById('eden__img__2');
-const imgEden3 = document.getElementById('eden__img__3');
+const imgPizza1 = document.getElementById('pizza__img__1');
+const imgPizza2 = document.getElementById('pizza__img__2');
+const imgPizza3 = document.getElementById('pizza__img__3');
 
-const urlEden1 = document.getElementById('eden__url__1');
-const urlEden2 = document.getElementById('eden__url__2');
-const urlEden3 = document.getElementById('eden__url__3');
+const urlPizza1 = document.getElementById('pizza__url__1');
+const urlPizza2 = document.getElementById('pizza__url__2');
+const urlPizza3 = document.getElementById('pizza__url__3');
 
+homePizza.addEventListener('click', () => {
+  homePizza.classList.add('active__tab');
+  allPizza.classList.remove('active__tab');
+  orderPizza.classList.remove('active__tab');
 
+  imgPizza1.style.display = 'block';
+  imgPizza2.style.display = 'none';
+  imgPizza3.style.display = 'none';
 
-homeEden.addEventListener('click', () => {
-  homeEden.classList.add('active__tab');
-  bookingEden.classList.remove('active__tab');
-  mapEden.classList.remove('active__tab');
-
-  imgEden1.style.display = 'block';
-  imgEden2.style.display = 'none';
-  imgEden3.style.display = 'none';
-
-  urlEden1.style.display = 'block';
-  urlEden2.style.display = 'none';
-  urlEden3.style.display = 'none';
+  urlPizza1.style.display = 'block';
+  urlPizza2.style.display = 'none';
+  urlPizza3.style.display = 'none';
 });
 
-bookingEden.addEventListener('click', () => {
-  homeEden.classList.remove('active__tab');
-  bookingEden.classList.add('active__tab');
-  mapEden.classList.remove('active__tab');
+allPizza.addEventListener('click', () => {
+  homePizza.classList.remove('active__tab');
+  allPizza.classList.add('active__tab');
+  orderPizza.classList.remove('active__tab');
 
-  imgEden1.style.display = 'none';
-  imgEden2.style.display = 'block';
-  imgEden3.style.display = 'none';
+  imgPizza1.style.display = 'none';
+  imgPizza2.style.display = 'block';
+  imgPizza3.style.display = 'none';
 
-  urlEden1.style.display = 'none';
-  urlEden2.style.display = 'block';
-  urlEden3.style.display = 'none';
+  urlPizza1.style.display = 'none';
+  urlPizza2.style.display = 'block';
+  urlPizza3.style.display = 'none';
 });
 
-mapEden.addEventListener('click', () => {
-  homeEden.classList.remove('active__tab');
-  bookingEden.classList.remove('active__tab');
-  mapEden.classList.add('active__tab');
+orderPizza.addEventListener('click', () => {
+  homePizza.classList.remove('active__tab');
+  allPizza.classList.remove('active__tab');
+  orderPizza.classList.add('active__tab');
 
-  imgEden1.style.display = 'none';
-  imgEden2.style.display = 'none';
-  imgEden3.style.display = 'block';
+  imgPizza1.style.display = 'none';
+  imgPizza2.style.display = 'none';
+  imgPizza3.style.display = 'block';
 
-  urlEden1.style.display = 'none';
-  urlEden2.style.display = 'none';
-  urlEden3.style.display = 'block';
+  urlPizza1.style.display = 'none';
+  urlPizza2.style.display = 'none';
+  urlPizza3.style.display = 'block';
 });
