@@ -1072,9 +1072,21 @@ header {
 	.next,
 	.html,
 	.css,
-	.javascript {
+	.javascript,
+	.gatsby,
+	.sanity,
+	.graphql {
 		padding: 5px;
 		font-size: 15px;
 		margin: 5px 5px;
+	}
+
+	.chrome__tab {
+		width: 70px;
+		font-size: 10px;
+	}
+
+	#gatsby__logo {
+		width: 80px;
 	}
 }
