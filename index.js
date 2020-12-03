@@ -7,7 +7,7 @@ app.get('*', (req, res, next) => {
   if (req.headers['x-forwarded-proto'] !== 'https') res.redirect(`https://legrandlucas.com${req.url}`);
   else next();
 });
-
+// comment
 // // public
 app.use(express.static('./public'));
 
