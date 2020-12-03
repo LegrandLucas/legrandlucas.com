@@ -646,6 +646,13 @@ header {
 	font-weight: bold;
 }
 
+.graphql {
+	background: #e24299;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+}
+
 #wesbos {
 	text-decoration: none;
 	color: var(--color-red);
