@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='../views/scalpel.css' rel="stylesheet">
+
+  <title>Scalpel area</title>
+</head>
+<body>
+  <div>
+    <h1>Scalpel area</h1>
+    <p>Welcome to the scalpel area, a 31 days code challenge where I tried to duplicate cools features I have seen on the internet, enjoy :)</p>
+  </div>
+<div>
+  <h1>
+    Random Hover - from Aristide Benoist
+  </h1>
+  <div class="aristide-effect">
+    <a class="random-over" href="legrandlucas.com">
+      <span class="rh">R</span>
+      <span class="rh">A</span>
+      <span class="rh">N</span>
+      <span class="rh">D</span>
+      <span class="rh">O</span>
+      <span class="rh">M</span>
+      <span class="rh">_</span>
+      <span class="rh">H</span>
+      <span class="rh">O</span>
+      <span class="rh">V</span>
+      <span class="rh">E</span>
+      <span class="rh">R</span>
+    </a>
+  </div>
+
+  <div id="container">
+    <h1>To-Do list</h1>
+    <input type="text">
+    <ul>
+      <li><span>X</span> one</li>
+      <li><span>X</span> two</li>
+      <li><span>X</span> three</li>
+    </ul>
+  </div>
+</div>
+</body>
+<script>
+  const spans = document.getElementsByClassName('rh');
+
+  console.log(spans)
+
+let li = document.getElementsByTagName("li");
+
+let button = document.getElementsByTagName("span");
+
+console.log(button); // list of elements
+
+// and we have to addEventListener on every element
+Array.prototype.map.call(button, (b) => {
+  b.addEventListener("click", function() {
+    console.log("clicked");
+  })
+})
+</script>
+</html>

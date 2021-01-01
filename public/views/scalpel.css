@@ -1,0 +1,28 @@
+:root {
+	--bar-height: 72px;
+	--color-primary: #0aaaa2;
+	--color-primary-light: #0affd2;
+	--color-red: #ed4151;
+	--color-grey: #768079;
+	--color-alabaster: #ece8e1;
+	--color-black: #0f1923;
+	--color-react: #61daf9;
+	background-color: var(--color-alabaster);
+}
+
+.rh {
+	float: left;
+	pointer-events: none;
+}
+
+.fx {
+	animation: a .2s linear alternate;
+}
+
+a {
+	color: inherit;
+}
+
+.aristide-effect {
+	transform: translate3d(0px, 0%, 0px);
+}

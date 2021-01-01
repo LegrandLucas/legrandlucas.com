@@ -18,8 +18,8 @@ app.get('/', (req, res) => {
   res.sendFile(`${__dirname}/public/views/index.html`);
 });
 
-app.get('/sandbox', (req, res) => {
-  res.sendFile(`${__dirname}/public/views/sandbox.html`);
+app.get('/scalpels', (req, res) => {
+  res.sendFile(`${__dirname}/public/views/scalpel.html`);
 });
 
 app.listen(port, () => {
